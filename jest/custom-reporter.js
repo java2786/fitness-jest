@@ -28,7 +28,11 @@ class MyCustomReporter {
     // console.log('GlobalConfig: ', this._globalConfig);
     // console.log('Options: ', this._options);
 
-    fs.writeFileSync(this.outputFiles.xml, this.xml.toString({ pretty: true }));
+    let createXMLFile = false;
+
+    if(createXMLFile){
+      fs.writeFileSync(this.outputFiles.xml, this.xml.toString({ pretty: true }));
+    }
 
   }
 
