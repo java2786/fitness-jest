@@ -1,3 +1,0 @@
-placefitnesstrainerappointmentcomponentBusinessShouldBePlaceGiftCardOrder=true
-contactuscomponentBusinessShouldCheck=true
-contactuscomponentBusinessShouldSubmitForm=true
