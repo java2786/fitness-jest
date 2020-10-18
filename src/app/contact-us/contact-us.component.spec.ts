@@ -22,6 +22,12 @@ describe('ContactUsComponent', () => {
   });
   
   describe('business', () => {
+  
+    it("should check", () => {
+      expect(false).toBeFalsy();
+    })
+  
+  
     it("should submit form", () => {
       expect(component.contactForm.valid).toBeFalsy();
       component.contactForm.controls["firstname"].setValue("testname");

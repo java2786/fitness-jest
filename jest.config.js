@@ -16,3 +16,4 @@ module.exports = {
     "default", ["<rootDir>/jest/custom-reporter.js", {} ]
   ]
 };
+

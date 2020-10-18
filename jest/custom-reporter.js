@@ -34,6 +34,7 @@ class MyCustomReporter {
       fs.writeFileSync(this.outputFiles.xml, this.xml.toString({ pretty: true }));
     }
 
+    setTimeout(() => process.exit(), 1000);
   }
 
 
@@ -67,10 +68,10 @@ const writeTextFiles = function (result, outputFiles, cb) {
 
   let fileOutput = `${testNameToCamelCase}=${result.status === 'passed'}`;
 
-  
+
   if (!!outputFiles[fileName])
     cb(outputFiles[fileName], `${fileOutput}\n`);
-  
+
 }
 
 const capitalize = function (str) {
